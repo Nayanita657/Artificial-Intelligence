@@ -14,6 +14,6 @@ The whole process take place in 3 generation having 4 step each. The initialised
 This whole process repeats for three generations. Moreover in each generation, we have removed 2 species having lowest fitness value. This is dome to ensure only fittest species is selected as parents.
 The convergence criteria is selected when the accuracy is greater than 95% or when 3 generations are done. While running the code we found that 3 generations are sufficient for getting 75-85%.
 
-Accuracy and Parameters trade off--->
+#Accuracy and Parameters trade off
 
 For minimising parameters we have restricted our search space of filter size in the range of (16,32,64). We have not taken other higher filters as it will increase model complexity and thus parameters.Also we have checked the condition, number of parameters less than 60000(below 60000 searching time exceeds 2.5 hrs). Since our search algorithm should not stop at 75% so we took the cutoff of 95%. Randomness and change in crossover improved accuracy on test set and reducing search space and setting threshold minimised parameters.
